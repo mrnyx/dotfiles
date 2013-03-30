@@ -1,0 +1,46 @@
+#!/bin/bash
+
+#xrdb -merge .Xresources
+
+#(sleep 2s && trayer --edge top --align right --SetDockType true --SetPartialStrut true --expand true --width 10 --height 12 --transparent true --alpha 0 --tint 0x000000) &
+
+gnome-screensaver &
+
+gnome-settings-daemon &
+
+if [ -x /usr/bin/nm-applet ] ; then
+    nm-applet --sm-disable &
+    #ck-launch-session nm-applet --sm-disable &
+fi
+
+# notification deamon (really annoying on gnome3)
+#/usr/lib/notification-daemon/notification-daemon &
+
+# policy kit
+/usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1 &
+
+update-notifier &
+
+workrave & 
+
+#redshift -l 52.1:21.0 -t 5700:3900 -g 0.8 -m vidmode -v &
+
+numlockx &
+
+#if [ -x /usr/bin/wicd-client ] ; then
+#   wicd-client &
+#fi
+
+#feh --bg-max /home/nyx/graphics/wallpapers/156038.jpg &
+#feh --bg-fill /home/nyx/graphics/wallpapers/avenue-of-oaks.jpg &
+#feh --bg-fill /home/nyx/graphics/wallpapers/685075.png &
+#feh --bg-fill /home/nyx/graphics/wallpapers/02032.jpg &
+#feh --bg-fill /home/nyx/graphics/wallpapers/try-again-landscape.jpg &
+#feh --bg-fill /home/nyx/graphics/wallpapers/autumn-from-ground.jpg &
+#feh --bg-fill /home/nyx/repository/graphics/wallpapers/running-hippo.gif &
+
+trayer --edge top --align right --SetDockType true --SetPartialStrut true --expand true --width 10 --height 18 --transparent true --alpha 0 --tint 0x000000 &
+
+exec xmonad
+#exec ck-launch-session dbus-launch --sh-syntax --exit-with-session xmonad
+#exec ck-launch-session dbus-launch xmonad
