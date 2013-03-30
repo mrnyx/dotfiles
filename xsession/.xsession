@@ -23,8 +23,6 @@ update-notifier &
 
 workrave & 
 
-#redshift -l 52.1:21.0 -t 5700:3900 -g 0.8 -m vidmode -v &
-
 numlockx &
 
 #if [ -x /usr/bin/wicd-client ] ; then
