@@ -31,13 +31,7 @@ numlockx &
 #   wicd-client &
 #fi
 
-#feh --bg-max /home/nyx/graphics/wallpapers/156038.jpg &
-#feh --bg-fill /home/nyx/graphics/wallpapers/avenue-of-oaks.jpg &
-#feh --bg-fill /home/nyx/graphics/wallpapers/685075.png &
-#feh --bg-fill /home/nyx/graphics/wallpapers/02032.jpg &
-#feh --bg-fill /home/nyx/graphics/wallpapers/try-again-landscape.jpg &
-#feh --bg-fill /home/nyx/graphics/wallpapers/autumn-from-ground.jpg &
-#feh --bg-fill /home/nyx/repository/graphics/wallpapers/running-hippo.gif &
+#feh --bg-fill /path/to/wallpaper.jpg &
 
 trayer --edge top --align right --SetDockType true --SetPartialStrut true --expand true --width 10 --height 18 --transparent true --alpha 0 --tint 0x000000 &
 
