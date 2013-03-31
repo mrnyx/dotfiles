@@ -17,6 +17,8 @@ Bundle 'gmarik/vundle'
 
 Bundle 'scrooloose/nerdtree'
 
+Bundle "lepture/vim-css"
+
 " replaces obsolete smart tab
 set cindent
 
