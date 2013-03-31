@@ -4,6 +4,19 @@
 
 syntax enable
 set nocompatible
+filetype off
+
+" vundle setup
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+" BUNDLES
+" let Vundle manage Vundle
+" required! 
+Bundle 'gmarik/vundle'
+
+Bundle 'scrooloose/nerdtree'
+
 " replaces obsolete smart tab
 set cindent
 
@@ -29,7 +42,6 @@ set showmode
 set showcmd
 
 set encoding=utf-8
-filetype on
 " load file type plugins + indentation
 filetype plugin indent on
 
@@ -165,6 +177,9 @@ nnoremap <CR> :noh<CR><CR>
 
 " toggle between relative number and regular line lumbering
 nnoremap <C-L> :call g:ToggleNuMode()<cr>
+
+" maps C-e to turn on/off NerdTree
+map <C-e> :NERDTreeToggle<CR>
 
 ""===============================
 "" custom syntax options
